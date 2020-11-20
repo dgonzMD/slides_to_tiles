@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 import multiprocessing
 import numpy as np
 import os
-# os.add_dll_directory(os.path.join(os.getcwd(),'openslide-win64-20171122\\bin'))
+os.add_dll_directory(os.path.join(os.getcwd(),'openslide-win64-20171122\\bin'))
 import openslide
 from openslide import OpenSlideError
 import PIL
@@ -34,6 +34,7 @@ import filter # must be the final imported module due to tight circular dependen
 import config
 
 BASE_DIR = config.BASE_DIR
+print(BASE_DIR)
 # BASE_DIR = os.path.join(os.sep, "Volumes", "BigData", "TUPAC")
 TRAIN_PREFIX = config.TRAIN_PREFIX
 SRC_TRAIN_DIR = config.SRC_TRAIN_DIR
@@ -1028,7 +1029,7 @@ def slide_info(display_all_properties=False):
 #     slide_to_scaled_pil_image(4)[0].show()
 #     singleprocess_training_slides_to_images()
 #     multiprocess_training_slides_to_images()
-    
+
 #     multiprocess_training_slides_to_images()
 #     filter.multiprocess_apply_filters_to_images()
 #     tiles.multiprocess_filtered_images_to_tiles()

@@ -6,7 +6,7 @@ Created on Tue Oct 13 20:43:55 2020
 """
 import os
 
-BASE_DIR = os.path.join(".", "dat")
+BASE_DIR = os.path.join(".", "data")
 TRAIN_PREFIX = "TR-"
 SRC_TRAIN_DIR = os.path.join(BASE_DIR, 'training_slides')
 SRC_TRAIN_EXT = "ndpi"
