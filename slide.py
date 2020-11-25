@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 import multiprocessing
 import numpy as np
 import os
-os.add_dll_directory(os.path.join(os.getcwd(),'openslide-win64-20171122\\bin'))
+#os.add_dll_directory(os.path.join(os.getcwd(),'openslide-win64-20171122\\bin'))
 import openslide
 from openslide import OpenSlideError
 import PIL
